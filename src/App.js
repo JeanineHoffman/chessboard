@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { Knight, Square } from './Components';
+import { Knight, Square, Board } from './Components';
 
 function App() {
   return (

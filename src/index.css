@@ -3,6 +3,10 @@
   width: 100%;
 }
 
+html {
+  padding: 12px;  
+}
+
 
 body {
   margin: 0;
