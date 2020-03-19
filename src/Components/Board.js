@@ -19,14 +19,12 @@ import { Square, Knight } from './';
             </div>)
     }
 
-export default function Board({ knightPosition }) {
+export default function Board( { knightPosition } ) {
 
     const squares = [];
     for(let i = 0; i < 64; i++) {
         squares.push(renderSquare(i, knightPosition))
     }
-
-    console.log(squares)
 
     return (
         <div
@@ -34,7 +32,7 @@ export default function Board({ knightPosition }) {
             width: "100%",
             height: "100%",
             display: "flex",
-            flex: "wrap"
+            flexWrap: "wrap"
          }}>
             {squares}
         </div>
