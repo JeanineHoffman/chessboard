@@ -3,10 +3,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { Board } from './Components';
+import observe from './Components/Game';
+
+observe(knightPosition => {
 
 ReactDOM.render(
-    <Board knightPosition={ [0,0] } />,
+    
+    <Board knightPosition={ knightPosition } />,
      document.getElementById('root')
-     );
-
+     )
+}
+)
 
