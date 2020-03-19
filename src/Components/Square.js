@@ -9,9 +9,8 @@ export default function Square({black, children}) {
         backgroundColor:fill,
         color: stroke,
         height: '100%',
-        width: '100%'
+        width: '100%',
     }}>
         {children}
-
         </div>
 }
