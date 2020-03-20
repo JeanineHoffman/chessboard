@@ -1,7 +1,6 @@
 import React from 'react';
 
-export default function Overlay(color){
-
+export default function Overlay({color}) {
 
 return (
 <div
