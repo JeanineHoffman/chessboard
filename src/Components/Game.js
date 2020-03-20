@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+
 
 
 let knightPosition = [0,0];
@@ -6,6 +7,21 @@ let observer = null;
 function emitChange(){
     observer(knightPosition);
 }
+
+export const ItemTypes = {
+    KNIGHT: "knight",
+
+    }
+
+// export const [{isDragging}, drag] = useDrag({
+//     item: { type: ItemTypes.KNIGHT },
+//     collect: monitor => ({
+//         isDragging: !!monitor.isDragging(),
+
+//     }),
+
+// })
+
 
 export default function observe(o) {
     if (observer){
