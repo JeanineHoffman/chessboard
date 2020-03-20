@@ -29,9 +29,12 @@ export default function BoardSquare( { x, y, children } ) {
         }}
       >
         <Square black={black}>{children}</Square>
-        {isOver && !canDrop && <Overlay color="red" />}
-        {!isOver && canDrop && <Overlay color="yellow" />}
-        {isOver && canDrop && <Overlay color="green" />}
+            {/* {isOver && !canDrop && console.log('1')}
+            {!isOver && canDrop && console.log('2')}
+            {isOver && canDrop && console.log('3')} */}
+        {isOver && !canDrop && (<Overlay color="red" />)}
+        {!isOver && canDrop && (<Overlay color="yellow" />)}
+        {isOver && canDrop && (<Overlay color="green" />)}
 
 
       </div>

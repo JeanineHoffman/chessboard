@@ -10,15 +10,6 @@ export const ItemTypes = {
   KNIGHT: "knight"
 };
 
-// export const [{isDragging}, drag] = useDrag({
-//     item: { type: ItemTypes.KNIGHT },
-//     collect: monitor => ({
-//         isDragging: !!monitor.isDragging(),
-
-//     }),
-
-// })
-
 export default function observe(o) {
   if (observer) {
     throw new Error("multiple observers not implemented");
